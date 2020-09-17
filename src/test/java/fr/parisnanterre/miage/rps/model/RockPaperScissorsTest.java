@@ -32,6 +32,7 @@ public class RockPaperScissorsTest {
         rps = new RockPaperScissors();
     }
 
+    /* it's me mario */
 
     @Parameters({"papier","pierre"})
 
@@ -39,6 +40,7 @@ public class RockPaperScissorsTest {
     public void testPlay(String p1, String p2) {
         //assertEquals(rps.play(Play.valueOf("PAPER"), Play.valueOf("ROCK")), TIE)
         assertEquals(rps.play(PAPER,ROCK), LOST);
+
 
     }
 
