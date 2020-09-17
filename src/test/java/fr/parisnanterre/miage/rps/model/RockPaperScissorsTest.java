@@ -32,7 +32,7 @@ public class RockPaperScissorsTest {
         rps = new RockPaperScissors();
     }
 
-    /* it's me mario  */
+    /* it's me mario 2  */
 
     @Parameters({"papier","pierre"})
 
