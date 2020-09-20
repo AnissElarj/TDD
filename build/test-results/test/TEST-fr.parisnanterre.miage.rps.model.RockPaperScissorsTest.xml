@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-20T18:29:20" hostname="LAPTOP-T7DL6UBM" time="0.095">
+<testsuite name="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-20T18:32:44" hostname="LAPTOP-T7DL6UBM" time="0.048">
   <properties/>
-  <testcase name="testLostPlay[0](SCISSORS, ROCK)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.011"/>
+  <testcase name="testLostPlay[0](SCISSORS, ROCK)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.012"/>
   <testcase name="testLostPlay[1](ROCK, PAPER)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
   <testcase name="testLostPlay[2](PAPER, SCISSORS)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
-  <testcase name="testTiePlay[0](ROCK, ROCK)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
+  <testcase name="testTiePlay[0](ROCK, ROCK)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.004"/>
   <testcase name="testTiePlay[1](PAPER, PAPER)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
-  <testcase name="testTiePlay[2](SCISSORS, SCISSORS)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.004"/>
-  <testcase name="testWinPlay[0](ROCK, SCISSORS)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.006"/>
-  <testcase name="testWinPlay[1](PAPER, ROCK)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.004"/>
+  <testcase name="testTiePlay[2](SCISSORS, SCISSORS)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
+  <testcase name="testWinPlay[0](ROCK, SCISSORS)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
+  <testcase name="testWinPlay[1](PAPER, ROCK)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
   <testcase name="testWinPlay[2](SCISSORS, PAPER)" classname="fr.parisnanterre.miage.rps.model.RockPaperScissorsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
