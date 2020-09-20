@@ -40,6 +40,24 @@ public class RockPaperScissorsTest {
                 {rps.Play(SCISSORS,PAPER)}
         };
     }
+    @DataProvider(name="TieData")
+    public Object[][] createTieData(){
+        return new Object[][]{
+                {rps.Play(ROCK,ROCK)},
+                {rps.Play(PAPER,PAPER)},
+                {rps.Play(SCISSORS,SCISSORS)}
+        };
+
+    }
+    @DataProvider(name="LostData")
+    public Object[][] createLostData(){
+        return new Object[][]{
+                {rps.Play(SCISSORS,ROCK)},
+                {rps.Play(ROCK,PAPER)},
+                {rps.Play(PAPER,SCISSORS)}
+        };
+    }
+
 
     @Test(dataProvider = "winData")
 
