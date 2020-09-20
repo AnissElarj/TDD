@@ -4,13 +4,12 @@ package fr.parisnanterre.miage.rps.model;
 
 import org.testng.annotations.*;
 
-import static fr.parisnanterre.miage.rps.model.Result.LOST;
 
 import static fr.parisnanterre.miage.rps.model.RPSEnum.*;
 
 import static fr.parisnanterre.miage.rps.model.RPSEnum.ROCK;
 import static fr.parisnanterre.miage.rps.model.RPSEnum.PAPER;
-import static fr.parisnanterre.miage.rps.model.Result.TIE;
+import static fr.parisnanterre.miage.rps.model.Result.*;
 import static org.junit.Assert.assertEquals;
 
 import org.testng.asserts.*;
@@ -35,42 +34,48 @@ public class RockPaperScissorsTest {
     @DataProvider(name="winData")
     public Object[][] createWinData(){
         return new Object[][]{
-                {rps.Play(ROCK,SCISSORS)},
-                {rps.Play(PAPER,ROCK)},
-                {rps.Play(SCISSORS,PAPER)}
+                {ROCK,SCISSORS},
+                {PAPER,ROCK},
+                {SCISSORS,PAPER}
         };
     }
-    @DataProvider(name="TieData")
+    @DataProvider(name="tieData")
     public Object[][] createTieData(){
         return new Object[][]{
-                {rps.Play(ROCK,ROCK)},
-                {rps.Play(PAPER,PAPER)},
-                {rps.Play(SCISSORS,SCISSORS)}
+                {ROCK,ROCK},
+                {PAPER,PAPER},
+                {SCISSORS,SCISSORS}
         };
 
     }
-    @DataProvider(name="LostData")
+    @DataProvider(name="lostData")
     public Object[][] createLostData(){
         return new Object[][]{
-                {rps.Play(SCISSORS,ROCK)},
-                {rps.Play(ROCK,PAPER)},
-                {rps.Play(PAPER,SCISSORS)}
+                {SCISSORS,ROCK},
+                {ROCK,PAPER},
+                {PAPER,SCISSORS}
         };
     }
 
 
     @Test(dataProvider = "winData")
 
-    /*
-    public void testWinPlay(String p1, String p2) {
-        //assertEquals(rps.play(Play.valueOf("PAPER"), Play.valueOf("ROCK")), TIE)
-        assertEquals(rps.Play(PAPER,ROCK), LOST);
+    public void testWinPlay(RPSEnum p1, RPSEnum p2) {
+        assertEquals(rps.Play(p1,p2), Result.WIN);
+
+    }
+    @Test(dataProvider = "tieData")
+    public void testTiePlay(RPSEnum p1, RPSEnum p2) {
+        assertEquals(rps.Play(p1,p2), TIE);
     }
 
-    public void testTiePlay(String p1, String p2) {
-        assertEquals(rps.Play(ROCK,ROCK), TIE);
+    @Test(dataProvider = "lostData")
+    public void testLostPlay(RPSEnum p1, RPSEnum p2) {
+        assertEquals(rps.Play(p1,p2), LOST);
     }
-    */
+
+
+
 
 
 }

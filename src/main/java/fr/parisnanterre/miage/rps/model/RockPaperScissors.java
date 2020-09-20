@@ -7,7 +7,7 @@ public class RockPaperScissors {
 
         public Result Play(RPSEnum p1, RPSEnum p2){
             if(p1==p2) return Result.TIE;
-            return Result.LOST;
+            return Result.WIN;
         }
 }
 
