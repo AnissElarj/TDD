@@ -58,10 +58,10 @@ public class RockPaperScissorsTest {
     }
 
 
-    @Test(dataProvider = "winData")
+    @Test(dataProvider = "lostData")
 
     public void testWinPlay(RPSEnum p1, RPSEnum p2) {
-        assertEquals(rps.Play(p1,p2), Result.WIN);
+        assertEquals(rps.Play(p1,p2), WIN);
 
     }
     @Test(dataProvider = "tieData")
@@ -69,7 +69,7 @@ public class RockPaperScissorsTest {
         assertEquals(rps.Play(p1,p2), TIE);
     }
 
-    @Test(dataProvider = "lostData")
+    @Test(dataProvider = "winData")
     public void testLostPlay(RPSEnum p1, RPSEnum p2) {
         assertEquals(rps.Play(p1,p2), LOST);
     }
