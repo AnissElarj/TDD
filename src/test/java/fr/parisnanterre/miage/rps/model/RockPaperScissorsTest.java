@@ -12,7 +12,7 @@ import static fr.parisnanterre.miage.rps.model.RPSEnum.PAPER;
 import static fr.parisnanterre.miage.rps.model.Result.*;
 import static org.junit.Assert.assertEquals;
 
-import org.testng.asserts.*;
+
 
 public class RockPaperScissorsTest {
 
@@ -58,7 +58,7 @@ public class RockPaperScissorsTest {
     }
 
 
-    @Test(dataProvider = "lostData")
+    @Test(dataProvider = "winData")
 
     public void testWinPlay(RPSEnum p1, RPSEnum p2) {
         assertEquals(rps.Play(p1,p2), WIN);
@@ -69,7 +69,7 @@ public class RockPaperScissorsTest {
         assertEquals(rps.Play(p1,p2), TIE);
     }
 
-    @Test(dataProvider = "winData")
+    @Test(dataProvider = "lostData")
     public void testLostPlay(RPSEnum p1, RPSEnum p2) {
         assertEquals(rps.Play(p1,p2), LOST);
     }
