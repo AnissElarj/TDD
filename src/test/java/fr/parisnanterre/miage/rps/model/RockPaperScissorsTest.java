@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 
 
 public class RockPaperScissorsTest {
-
+/*
     RockPaperScissors rps;
     @AfterMethod
     public void tearDown(){
@@ -27,7 +27,7 @@ public class RockPaperScissorsTest {
         rps = new RockPaperScissors();
     }
 
-    /* it's me mario 2  */
+
 
    // @Parameters({"papier","pierre"})
 
@@ -77,5 +77,5 @@ public class RockPaperScissorsTest {
 
 
 
-
+*/
 }
