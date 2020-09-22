@@ -4,4 +4,5 @@ language: java
 sudo: false
 
 script:
-    - ./gradlew check
+  - ./gradlew --version
+  - ./gradlew check
