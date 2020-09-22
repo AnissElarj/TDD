@@ -4,7 +4,7 @@ package fr.parisnanterre.miage.rps.model;
 public class RockPaperScissors {
 
     public RockPaperScissors(){}
-
+/*
         public Result Play(RPSEnum p1, RPSEnum p2){
             return switch (p1) {
                 case ROCK -> switch (p2) {
@@ -24,6 +24,8 @@ public class RockPaperScissors {
                 };
             };
         }
+        */
+
 }
 
 
